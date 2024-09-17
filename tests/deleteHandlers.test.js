@@ -15,7 +15,7 @@ test('Status should be 200...', async () => {
 });
 
 
-test('Response body should contain...', async () => {
+test('Should delete the product and Respond True', async () => {
 	let actualResponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {

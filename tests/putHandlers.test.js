@@ -23,7 +23,7 @@ test('Status should be 200...', async () => {
 });
 
 
-test('Response body should contain...', async () => {
+test('Should change price of the procuct and respond True', async () => {
 	let actualResponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/products/7`, {
